@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {}
+
+
+/* navbar section */
+
+#navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+
+/* end navbar settings  */
+
+
+/* beginning content section */
+
+.content {}
+
+
+/* welcome section  */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #347b98;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+#welcome-section h1,
+#welcome-section h2 {
+    /* margin: auto; */
+    text-align: center;
+    font-size: 2em;
+    text-justify: auto;
+}
+
+
+/* end welcome section */
+
+
+/* projects section */
+
+#projects {
+    background: #23538e;
+    padding-top: 60px;
+}
+
+h1 {
+    text-align: center;
+    padding: 25px;
+}
+
+.project-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.project-tile {
+    padding: 20px;
+}
+
+.project-tile img {
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-tile a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* end projects section */
+
+
+/* contacts section */
+
+#contacts {
+
+    background: #238e5e;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+#link_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#contacts img {
+    height: 25px;
+    width: 25px;
+}
+#contacts a{
+    height: 25px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+
+    
+}
+
+
+
+/* end contacts section */
+
+
+@media (max-width: 768px){
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #link_wrapper {
+        flex-direction: column;
+    }
+}
